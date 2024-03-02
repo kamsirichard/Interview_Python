@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Polling Unit Result</title>
+</head>
+<body>
+    <h1>Add Polling Unit Result</h1>
+    <form method="post" action="/add_polling_unit">
+        <label for="polling_unit_id">Polling Unit ID:</label>
+        <input type="text" name="polling_unit_id" required>
+        <label for="party_abbreviation">Party Abbreviation:</label>
+        <input type="text" name="party_abbreviation" required>
+        <label for="party_score">Party Score:</label>
+        <input type="text" name="party_score" required>
+        <button type="submit">Add Result</button>
+    </form>
+</body>
+</html>

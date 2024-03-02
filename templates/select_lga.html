@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select LGA</title>
+</head>
+<body>
+    <h1>Select Local Government</h1>
+    <form method="post" action="/lga_results">
+        <label for="lga_id">Select LGA:</label>
+        <select name="lga_id" id="lga_id">
+            {% for lga in lgas %}
+                <option value="{{ lga.id }}">{{ lga.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Show Results</button>
+    </form>
+</body>
+</html>
